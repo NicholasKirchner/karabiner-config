@@ -2,6 +2,29 @@
   "title": "Numeric Keypad",
   "rules": [
     {
+      "description": "Double tap allows hold-down tab",
+      "manipulators": [
+        {
+          "conditions": [
+            {
+              "name": "tab_pressed",
+              "type": "variable_if",
+              "value": 1
+            }
+          ],
+          "from": {
+            "key_code": "tab"
+          },
+          "to": [
+            {
+            "key_code": "tab"
+            }
+          ],
+          "type": "basic"
+        }
+      ]
+    },
+    {
       "description": "Tab triggers numpad mode",
       "manipulators": [
         {
@@ -13,6 +36,12 @@
             {
               "set_variable": {
                 "name": "numeric_keypad_mode",
+                "value": 1
+              }
+            },
+            {
+              "set_variable": {
+                "name": "tab_pressed",
                 "value": 1
               }
             }
@@ -29,7 +58,25 @@
                 "value": 0
               }
             }
-          ]
+          ],
+          "to_delayed_action": {
+            "to_if_canceled": [
+              {
+                "set_variable": {
+                  "name": "tab_pressed",
+                  "value": 0
+                }
+              }
+            ],
+            "to_if_invoked": [
+              {
+                "set_variable": {
+                  "name": "tab_pressed",
+                  "value": 0
+                }
+              }
+            ]
+          }
         }
       ]
     },

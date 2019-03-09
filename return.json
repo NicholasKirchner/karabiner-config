@@ -7,7 +7,7 @@
         {
           "conditions": [
             {
-              "name": "enter pressed",
+              "name": "enter_pressed",
               "type": "variable_if",
               "value": 1
             }
@@ -44,7 +44,7 @@
           "to": [
             {
               "set_variable": {
-                "name": "enter pressed",
+                "name": "enter_pressed",
                 "value": 1
               }
             },
@@ -56,7 +56,7 @@
             "to_if_canceled": [
               {
                 "set_variable": {
-                  "name": "enter pressed",
+                  "name": "enter_pressed",
                   "value": 0
                 }
               }
@@ -64,7 +64,7 @@
             "to_if_invoked": [
               {
                 "set_variable": {
-                  "name": "enter pressed",
+                  "name": "enter_pressed",
                   "value": 0
                 }
               }
