@@ -2,7 +2,7 @@
   "title": "Numeric Keypad",
   "rules": [
     {
-      "description": "Double tap allows hold-down tab",
+      "description": "Double-tap Tab allows hold-down tab",
       "manipulators": [
         {
           "conditions": [

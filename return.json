@@ -2,7 +2,7 @@
   "title": "Return behavior",
   "rules": [
     {
-      "description": "Double tap allows hold-down return",
+      "description": "Double-tap Return allows hold-down return",
       "manipulators": [
         {
           "conditions": [

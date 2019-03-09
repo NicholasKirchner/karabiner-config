@@ -2,7 +2,7 @@
   "title": "Caps Lock behavior",
   "rules": [
     {
-      "description": "Double tap allows hold-down delete",
+      "description": "Double-tap Caps Lock allows hold-down delete",
       "manipulators": [
         {
           "conditions": [
